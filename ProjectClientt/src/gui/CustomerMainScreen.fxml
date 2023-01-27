@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="714.0" style="-fx-background-color: #f8f4ec;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CustomerMainScreenController">
+   <children>
+      <Label layoutX="72.0" layoutY="115.0" prefHeight="38.0" prefWidth="134.0" textFill="#6b0e00">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="415.0" fitWidth="397.0" layoutX="317.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/regular%20logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="UserStatus" layoutX="212.0" layoutY="120.0" prefHeight="34.0" prefWidth="158.0" style="-fx-background-color: #CAC7CE;" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.03947368264198303" green="0.014437134377658367" blue="0.014437134377658367" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.31578946113586426" green="0.22076024115085602" blue="0.22076024115085602" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane layoutY="497.0" prefHeight="55.0" prefWidth="714.0" style="-fx-background-color: #343c34;">
+         <children>
+            <Button fx:id="SignOutbtn" layoutX="4.0" layoutY="5.0" mnemonicParsing="false" onAction="#pressSignOut" prefHeight="44.0" prefWidth="95.0" style="-fx-background-color: #f2e9c0;" text="Log Out" textFill="#343c34">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="55.0" fitWidth="73.0" layoutX="307.0">
+               <image>
+                  <Image url="@../images/COPYRIGHTS.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="NewOrderBTN" layoutX="71.0" layoutY="233.0" mnemonicParsing="false" onAction="#PressNewOrder" prefHeight="55.0" prefWidth="211.0" style="-fx-background-color: #cfa34b;" text="New Order" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="260.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/5970645.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="71.0" layoutY="121.0" text="User Status:" textFill="#7c6e48">
+         <font>
+            <Font name="Bell MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="-1.0" prefHeight="63.0" prefWidth="720.0" style="-fx-background-color: #383c34;">
+         <children>
+            <Button fx:id="exitBTN" layoutX="662.0" layoutY="10.0" mnemonicParsing="false" onAction="#pressExitBTN" prefHeight="40.0" prefWidth="44.0" style="-fx-background-color: #f2e9c0;" text="X" textFill="#343c34">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="WelcomeLabel" layoutX="126.0" layoutY="12.0" prefHeight="42.0" prefWidth="483.0" text="Welcome back Nir!" textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Broadway" size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="pickUpOrderBTN" layoutX="70.0" layoutY="325.0" mnemonicParsing="false" onAction="#PresspickUpOrderBTN" prefHeight="55.0" prefWidth="211.0" style="-fx-background-color: #cfa34b;" text="Pick Up Order" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="260.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PICK%20UP.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="DeliveryBTN1" layoutX="71.0" layoutY="409.0" mnemonicParsing="false" onAction="#PressDeliveryBTN" prefHeight="55.0" prefWidth="211.0" style="-fx-background-color: #cfa34b;" text="Delivery received" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="22.0" layoutY="72.0" prefHeight="18.0" prefWidth="99.0" text="Home Page">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SetMinimumLevelController">
+   <children>
+      <AnchorPane layoutY="-6.0" prefHeight="478.0" prefWidth="421.0" style="-fx-background-color: #f8f4ec; -fx-background-color: ;">
+         <children>
+            <Label fx:id="specificAreaLable" layoutX="275.0" layoutY="88.0" prefHeight="31.0" prefWidth="128.0" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="6.0" prefHeight="45.0" prefWidth="428.0" style="-fx-background-color: #383c34;">
+               <children>
+                  <Button fx:id="exitBtn" layoutX="389.0" layoutY="6.0" mnemonicParsing="false" onAction="#pressExitBtn" prefWidth="26.0" style="-fx-background-color: #f2e9c0;" text="X" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="minLevelLable" layoutX="61.0" layoutY="3.0" prefHeight="40.0" prefWidth="307.0" text="Minimum Level" textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Broadway" size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="439.0" prefHeight="39.0" prefWidth="428.0" style="-fx-background-color: #343c34;">
+               <children>
+                  <Button fx:id="backBtn" layoutX="4.0" layoutY="3.0" mnemonicParsing="false" onAction="#pressBackBtn" prefHeight="31.0" prefWidth="64.0" style="-fx-background-color: #f2e9c0;" text="Back" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="ekrutLogoImage" fitHeight="33.0" fitWidth="85.0" layoutX="169.0" layoutY="4.0">
+                     <image>
+                        <Image url="@../images/COPYWRITES.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="machineNameImg" fitHeight="30.0" fitWidth="31.0" layoutX="46.0" layoutY="149.0">
+               <image>
+                  <Image url="@../images/4718735.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="updateReportBtn" layoutX="142.0" layoutY="320.0" mnemonicParsing="false" onAction="#pressUpdate" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #cfa34b;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="nameMachineComboBox" layoutX="253.0" layoutY="153.0" onAction="#chooseNumberMachine" prefHeight="26.0" prefWidth="128.0" promptText="Machine Name" style="-fx-background-color: #cfcbc8;" />
+            <Label fx:id="managmentAreaLable" layoutX="96.0" layoutY="90.0" text="Managment area:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="machineNameLable" layoutX="97.0" layoutY="151.0" text="Machine name: " textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="enterMinLevelLable" layoutX="96.0" layoutY="212.0" text="Enter Minimum Level:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorDataLable" layoutX="52.0" layoutY="375.0" prefHeight="50.0" prefWidth="330.0" textAlignment="CENTER" textFill="#ee0404">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="specificMinLevelText" layoutX="163.0" layoutY="262.0" prefHeight="25.0" prefWidth="92.0" />
+            <ImageView fx:id="minLevelImage" fitHeight="30.0" fitWidth="31.0" layoutX="46.0" layoutY="211.0">
+               <image>
+                  <Image url="@../images/level.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="successUpdateLabel" alignment="TOP_CENTER" layoutX="62.0" layoutY="385.0" prefHeight="50.0" prefWidth="330.0" textAlignment="CENTER" textFill="#ee0404">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="60.0" prefHeight="18.0" prefWidth="76.0" text="Home Page &gt;" />
+            <Label layoutX="98.0" layoutY="60.0" prefHeight="18.0" prefWidth="111.0" text="Set Minimum Level">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="managmentAreaImage" fitHeight="30.0" fitWidth="31.0" layoutX="46.0" layoutY="81.0">
+         <image>
+            <Image url="@../images/9148306.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

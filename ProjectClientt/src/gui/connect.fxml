@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f8f4ec;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ConnectController">
+   <children>
+      <Label layoutX="162.0" layoutY="21.0" text="Enter Server IP" textFill="#b79f62">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="exit_btn" layoutX="38.0" layoutY="356.0" mnemonicParsing="false" onAction="#prees_exit" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #cfa34b;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font></Button>
+      <RadioButton fx:id="radioEK" layoutX="40.0" layoutY="88.0" mnemonicParsing="false" onAction="#pressradioEK" text="Connect EK" textFill="#a98a4f">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioOL" layoutX="40.0" layoutY="129.0" mnemonicParsing="false" onAction="#pressradioOL" text="Connect OL" textFill="#a98a4f" toggleGroup="$group">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </RadioButton>
+      <AnchorPane fx:id="anchorOL" layoutX="313.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="connectOL_btn" layoutX="18.0" layoutY="100.0" mnemonicParsing="false" onAction="#pressConnectOL" prefHeight="27.0" prefWidth="165.0" style="-fx-background-color: #cfa34b;" text="Connect OL" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="40.0" layoutY="23.0" text="Connect OL" textFill="#a98a4f">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ip_server1" layoutX="27.0" layoutY="62.0" style="-fx-border-color: #b28f47; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;" text="localhost" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorEKFAST" layoutX="280.0" layoutY="64.0" prefHeight="295.0" prefWidth="302.0">
+         <children>
+            <Button fx:id="connectEK_btn1" layoutX="58.0" layoutY="200.0" mnemonicParsing="false" onAction="#pressConnectEK" prefHeight="27.0" prefWidth="165.0" style="-fx-background-color: #cfa34b;" text="Connect EK" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="fastConnectbtn" layoutX="58.0" layoutY="249.0" mnemonicParsing="false" onAction="#pressfastConnectbtn" prefHeight="27.0" prefWidth="165.0" style="-fx-background-color: #cfa34b;" text="Fast connect" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="ip_server" layoutX="58.0" layoutY="48.0" style="-fx-border-color: #b28f47; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;" text="localhost" />
+            <Label layoutX="54.0" layoutY="14.0" text="Connect EK/FAST" textFill="#a98a4f">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="ErrorLabel" layoutX="27.0" layoutY="148.0" prefHeight="43.0" prefWidth="258.0" textFill="RED">
+               <font>
+                  <Font name="Bell MT" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="chooseAreaDropDownList" layoutX="57.0" layoutY="87.0" onMousePressed="#pressAreaChoosed" prefHeight="26.0" prefWidth="151.0" promptText="-Select Area-" style="-fx-background-color: #cfcbc8;" />
+            <ComboBox fx:id="chooseMachineNameDropDownList" layoutX="57.0" layoutY="122.0" onMousePressed="#pressMachineNameDropDownList" prefHeight="26.0" prefWidth="151.0" promptText="-Select Mechine-" style="-fx-background-color: #cfcbc8;" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="32.0" fitWidth="83.0" layoutX="259.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/COPYWRITES.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

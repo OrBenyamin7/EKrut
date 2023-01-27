@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.OrderReportViewController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="534.0" prefWidth="864.0" style="-fx-background-color: #f8f4ec; -fx-background-color: ;">
+         <children>
+            <ImageView fx:id="ordersInTotalImg" fitHeight="31.0" fitWidth="31.0" layoutX="11.0" layoutY="259.0">
+               <image>
+                  <Image url="@../images/7293583.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="managmentAreaImg" fitHeight="30.0" fitWidth="31.0" layoutX="12.0" layoutY="202.0">
+               <image>
+                  <Image url="@../images/9148306.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="-6.0" layoutY="499.0" prefHeight="42.0" prefWidth="879.0" style="-fx-background-color: #343c34;">
+               <children>
+                  <Button fx:id="backBtn" layoutX="13.0" layoutY="4.0" mnemonicParsing="false" onAction="#pressBackBtn" prefHeight="31.0" prefWidth="64.0" style="-fx-background-color: #f2e9c0;" text="Back" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="ekrutLogoImage1" fitHeight="40.0" fitWidth="85.0" layoutX="387.0" layoutY="1.0">
+                     <image>
+                        <Image url="@../images/COPYWRITES.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="specificAreaLable" layoutX="230.0" layoutY="204.0" prefHeight="27.0" prefWidth="134.0" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="managmentAreaLable" layoutX="52.0" layoutY="204.0" text="Managment area:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="OrdersInTotalLable" layoutX="52.0" layoutY="262.0" text="Orders in total:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="specificOrdersInTotalLable" layoutX="211.0" layoutY="261.0" prefHeight="27.0" prefWidth="103.0" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="-1.0" prefHeight="46.0" prefWidth="873.0" style="-fx-background-color: #383c34;">
+               <children>
+                  <Button fx:id="exitBtn" layoutX="833.0" layoutY="7.0" mnemonicParsing="false" onAction="#pressExitBtn" prefWidth="26.0" style="-fx-background-color: #f2e9c0;" text="X" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="OrderReportLabel" layoutX="305.0" layoutY="3.0" prefHeight="40.0" prefWidth="260.0" text="Order Report" textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Broadway" size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <PieChart fx:id="pieChartOrder" layoutX="388.0" layoutY="69.0" prefHeight="418.0" prefWidth="474.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="17.0" layoutY="57.0" prefHeight="18.0" prefWidth="76.0" text="Home Page &gt;" />
+      <Label layoutX="93.0" layoutY="57.0" prefHeight="18.0" prefWidth="76.0" text="Report view &gt;" />
+      <Label layoutX="171.0" layoutY="57.0" prefHeight="18.0" prefWidth="76.0" text="Order Report">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="calendarImg" fitHeight="33.0" fitWidth="33.0" layoutX="10.0" layoutY="319.0">
+         <image>
+            <Image url="@../images/8997774.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="dateLabel" layoutX="113.0" layoutY="323.0" prefHeight="27.0" prefWidth="156.0" textFill="#7c6e48">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="51.0" layoutY="322.0" text="Date:" textFill="#7c6e48">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

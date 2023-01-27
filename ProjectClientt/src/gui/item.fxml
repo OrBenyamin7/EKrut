@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#click" prefHeight="188.0" prefWidth="217.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ItemController">
+   <children>
+      <Label fx:id="nameLabel" layoutX="33.0" layoutY="15.0" prefHeight="49.0" prefWidth="137.0" text="Cherry" textAlignment="RIGHT">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceLable" layoutX="132.0" layoutY="17.0" prefHeight="49.0" prefWidth="70.0" text="0.99₪">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="14.0" layoutY="69.0" prefHeight="122.0" prefWidth="200.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="200.0" />
+            <VBox layoutY="8.0" prefHeight="116.0" prefWidth="55.0" />
+            <ImageView fx:id="img" fitHeight="100.0" fitWidth="85.0" layoutX="60.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox layoutX="168.0" layoutY="-1.0" prefHeight="132.0" prefWidth="31.0" />
+            <HBox layoutY="93.0" prefHeight="30.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

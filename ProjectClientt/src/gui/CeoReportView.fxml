@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CeoReportViewController">
+   <children>
+      <AnchorPane layoutY="-6.0" prefHeight="478.0" prefWidth="421.0" style="-fx-background-color: #f8f4ec; -fx-background-color: ;">
+         <children>
+            <ComboBox fx:id="yearComboBox" layoutX="100.0" layoutY="273.0" onAction="#chooseYear" prefHeight="25.0" prefWidth="85.0" promptText="Year" style="-fx-background-color: #cfcbc8;" />
+            <ComboBox fx:id="monthComboBox" layoutX="212.0" layoutY="273.0" onAction="#chooseMonth" prefHeight="25.0" prefWidth="85.0" promptText="Month" style="-fx-background-color: #cfcbc8;" />
+            <AnchorPane layoutY="6.0" prefHeight="45.0" prefWidth="428.0" style="-fx-background-color: #383c34;">
+               <children>
+                  <Button fx:id="exitBtn" layoutX="389.0" layoutY="6.0" mnemonicParsing="false" onAction="#pressExitBtn" prefWidth="26.0" style="-fx-background-color: #f2e9c0;" text="X" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="reportLable" layoutX="151.0" layoutY="4.0" prefHeight="40.0" prefWidth="179.0" text="Report" textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Broadway" size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="440.0" prefHeight="40.0" prefWidth="428.0" style="-fx-background-color: #343c34;">
+               <children>
+                  <Button fx:id="backBtn" layoutX="4.0" layoutY="3.0" mnemonicParsing="false" onAction="#pressBackBtn" prefHeight="32.0" prefWidth="76.0" style="-fx-background-color: #f2e9c0;" text="Back" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="ekrutLogoImage1" fitHeight="33.0" fitWidth="76.0" layoutX="167.0" layoutY="4.0">
+                     <image>
+                        <Image url="@../images/COPYWRITES.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="machineNumberImg" fitHeight="30.0" fitWidth="31.0" layoutX="46.0" layoutY="208.0">
+               <image>
+                  <Image url="@../images/4718735.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="showReportBtn" layoutX="142.0" layoutY="323.0" mnemonicParsing="false" onAction="#pressShowReport" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #cfa34b;" text="Show Report" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="reportTypeComboBox" layoutX="170.0" layoutY="150.0" onAction="#chooseTypeReport" prefHeight="25.0" prefWidth="111.0" promptText="Report type" style="-fx-background-color: #cfcbc8;" />
+            <ComboBox fx:id="nameMachineComboBox" layoutX="259.0" layoutY="212.0" onAction="#chooseMachine" prefHeight="26.0" prefWidth="128.0" promptText="Machine Name" style="-fx-background-color: #cfcbc8;" />
+            <Label fx:id="machineNumberLable" layoutX="95.0" layoutY="210.0" text="Machine Name: " textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="typeLable" layoutX="95.0" layoutY="149.0" text="Type:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="typeImg" fitHeight="40.0" fitWidth="40.0" layoutX="42.0" layoutY="143.0">
+               <image>
+                  <Image url="@../images/6367297.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="calendarImg" fitHeight="33.0" fitWidth="33.0" layoutX="47.0" layoutY="266.0">
+               <image>
+                  <Image url="@../images/8997774.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="errorReportDataLable" alignment="TOP_CENTER" layoutX="44.0" layoutY="375.0" prefHeight="46.0" prefWidth="330.0" textAlignment="CENTER" textFill="#ee0404">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="56.0" prefHeight="18.0" prefWidth="76.0" text="Home Page &gt;" />
+            <Label layoutX="103.0" layoutY="56.0" prefHeight="18.0" prefWidth="70.0" text="Report view">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="areaImg" fitHeight="30.0" fitWidth="31.0" layoutX="46.0" layoutY="91.0">
+               <image>
+                  <Image url="@../images/3382176.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="areaComboBox" layoutX="171.0" layoutY="95.0" onAction="#chooseLocation" prefHeight="26.0" prefWidth="111.0" promptText="Area" style="-fx-background-color: #cfcbc8;" />
+            <Label fx:id="areaLabel" layoutX="95.0" layoutY="93.0" text="Area:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

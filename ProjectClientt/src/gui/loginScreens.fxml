@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="638.0" style="-fx-background-color: #f8f4ec;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginScreensController">
+   <children>
+      <AnchorPane layoutX="587.0" layoutY="2.0" prefHeight="47.0" prefWidth="50.0" style="-fx-background-color: #383c34;" />
+      <TextField fx:id="username" layoutX="412.0" layoutY="147.0" promptText="username" style="-fx-border-color: #cfa34b; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <PasswordField fx:id="password" layoutX="413.0" layoutY="210.0" prefHeight="28.0" prefWidth="162.0" style="-fx-border-color: #cfa34b; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;" />
+      <AnchorPane layoutX="12.0" layoutY="12.0" prefHeight="375.0" prefWidth="334.0" style="-fx-background-color: #383c34; -fx-background-color: ;">
+         <children>
+            <Label fx:id="WelcomeLable" layoutX="56.0" layoutY="32.0" text="Welcome to" textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Broadway" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="284.0" textFill="#b28f47">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="MakeYourDayBettrerLable" layoutX="19.0" layoutY="318.0" text="Make your day better " textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Broadway" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="ekrutIcon" fitHeight="210.0" fitWidth="211.0" layoutX="56.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/regular%20logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="LogInbtn" layoutX="391.0" layoutY="283.0" mnemonicParsing="false" onAction="#pressLogIn" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #cfa34b;" text="Log In" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="userLogInLable" layoutX="427.0" layoutY="92.0" text="User Login" textFill="#b28f47">
+         <font>
+            <Font name="Bell MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="443.0" layoutY="56.0">
+         <image>
+            <Image url="@../images/loginPhotoPerson.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="469.0" layoutY="71.0">
+         <image>
+            <Image url="@../images/loginPhotoPerson.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="494.0" layoutY="56.0">
+         <image>
+            <Image url="@../images/loginPhotoPerson.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="exitBTN" layoutX="590.0" layoutY="5.0" mnemonicParsing="false" onAction="#exitBTNPress" prefHeight="40.0" prefWidth="44.0" style="-fx-background-color: #f2e9c0;" text="X" textFill="#343c34">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="CopyRights" fitHeight="36.0" fitWidth="85.0" layoutX="442.0" layoutY="352.0">
+         <image>
+            <Image url="@../images/COPYWRITES.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="ErrorUserPass" layoutX="408.0" layoutY="249.0" prefHeight="26.0" prefWidth="155.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

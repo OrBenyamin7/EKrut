@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.OrderAcceptedController">
+   <children>
+      <AnchorPane layoutX="-11.0" prefHeight="436.0" prefWidth="402.0" style="-fx-background-color: #f8f4ec; -fx-background-color: ;">
+         <children>
+            <Label layoutX="27.0" layoutY="68.0" prefHeight="50.0" prefWidth="370.0" text="Thank You For Chosing EKrut Machines!" textFill="#b79f62" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="2.0" layoutY="387.0" prefHeight="50.0" prefWidth="402.0" style="-fx-background-color: #343c34;">
+               <children>
+                  <ImageView fitHeight="34.0" fitWidth="76.0" layoutX="160.0" layoutY="9.0">
+                     <image>
+                        <Image url="@../images/COPYWRITES.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="backToHomePageBTN" layoutX="17.0" layoutY="7.0" mnemonicParsing="false" onAction="#pressbackToHomePageBTN" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: #f2e9c0;" text="Home Page" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="9.0" prefHeight="39.0" prefWidth="395.0" style="-fx-background-color: #383c34;">
+               <children>
+                  <Label alignment="CENTER" layoutX="43.0" layoutY="2.0" prefHeight="34.0" prefWidth="295.0" text="Order Accepted!" textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Broadway" size="29.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="exitBTN" layoutX="353.0" layoutY="5.0" mnemonicParsing="false" onAction="#pressexitBTN" prefHeight="26.0" prefWidth="33.0" style="-fx-background-color: #f2e9c0;" text="X" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Label layoutX="29.0" layoutY="90.0" prefHeight="50.0" prefWidth="133.0" text="Your Order:" textFill="#b79f62" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="textAreaOrder" layoutX="36.0" layoutY="140.0" prefHeight="132.0" prefWidth="330.0" style="-fx-background-color: #f8f4ec;">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font></TextArea>
+            <AnchorPane fx:id="anchorPickUp" layoutX="36.0" layoutY="282.0" prefHeight="89.0" prefWidth="295.0">
+               <children>
+                  <Label layoutX="6.0" layoutY="20.0" prefHeight="50.0" prefWidth="133.0" text="PickUp code:" textFill="#b79f62" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pickUpCode" layoutX="117.0" layoutY="20.0" prefHeight="50.0" prefWidth="133.0" textFill="#b79f62" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="22.0" layoutY="52.0" prefHeight="18.0" prefWidth="76.0" text="Home Page &gt;" />
+            <Label fx:id="OL3" layoutX="223.0" layoutY="52.0" prefHeight="18.0" prefWidth="107.0" text="Order Accepted">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="OL1" layoutX="97.0" layoutY="52.0" prefHeight="18.0" prefWidth="76.0" text="Order type &gt;" />
+            <Label fx:id="ek1" layoutX="100.0" layoutY="52.0" prefHeight="18.0" prefWidth="76.0" text="Catalog &gt;" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="OL2" layoutX="159.0" layoutY="53.0" prefHeight="18.0" prefWidth="76.0" text="Catalog&gt;" />
+      <Label fx:id="ek2" layoutX="157.0" layoutY="52.0" prefHeight="18.0" prefWidth="95.0" text="Order Accepted">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

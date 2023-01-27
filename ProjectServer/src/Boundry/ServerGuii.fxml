@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="686.0" style="-fx-background-color: #b79f62;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Boundry.ServerGuiController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="451.0" prefWidth="293.0" style="-fx-background-color: #f8f4ec;">
+         <children>
+            <Button fx:id="importDataBTN" layoutX="143.0" layoutY="402.0" mnemonicParsing="false" onAction="#pressImportData" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #cfa34b;" text="Import Data" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font></Button>
+            <Button fx:id="connect_btn" layoutX="85.0" layoutY="302.0" mnemonicParsing="false" onAction="#pressConnect" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #cfa34b;" text="Connect" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font></Button>
+            <Button fx:id="disconnect_btn" layoutX="85.0" layoutY="344.0" mnemonicParsing="false" onAction="#pressDisconnect" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #cfa34b;" text="Disconnect" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font></Button>
+            <Button fx:id="exit_btn" layoutX="17.0" layoutY="402.0" mnemonicParsing="false" onAction="#pressExit" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #cfa34b;" text="Exit" textFill="#fffefe">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <TableView fx:id="table" layoutX="307.0" layoutY="58.0" prefHeight="175.0" prefWidth="351.0">
+        <columns>
+          <TableColumn fx:id="ip_column" prefWidth="125.0" style="-fx-background-color: #ffecbd;" text="IP" />
+          <TableColumn fx:id="host_column" prefWidth="135.0" style="-fx-background-color: #ffecbd;" text="HOST" />
+            <TableColumn fx:id="status_column" prefWidth="92.0" style="-fx-background-color: #ffecbd;" text="STATUS" />
+        </columns>
+      </TableView>
+      <Label layoutX="393.0" layoutY="18.0" text="Connected Clients" textFill="#ffecbd">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="58.0" text="IP:" textFill="#b79f62">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font></Label>
+      <Label layoutX="18.0" layoutY="102.0" text="Port:" textFill="#b79f62">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="146.0" text="DB Name:" textFill="#b79f62">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="195.0" text="DB User Name:" textFill="#b79f62">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="243.0" text="DB Password:" textFill="#b79f62">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font></Label>
+      <TextField fx:id="ip" layoutX="121.0" layoutY="54.0" promptText="192.168.22.3" />
+      <TextField fx:id="port" layoutX="121.0" layoutY="98.0" promptText="5555" />
+      <TextField fx:id="db_name" layoutX="121.0" layoutY="142.0" promptText="&quot;jdbc:mysql://localhost/project?serverTimezone=IST&quot;" />
+      <TextField fx:id="db_user_name" layoutX="121.0" layoutY="191.0" promptText="root" />
+      <PasswordField fx:id="db_password" layoutX="121.0" layoutY="240.0" />
+      <TextArea fx:id="textarea_console" layoutX="322.0" layoutY="266.0" prefHeight="168.0" prefWidth="322.0" />
+      <Label layoutX="448.0" layoutY="242.0" text="Console" textFill="#ffecbd">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="15.0" text="Server Configuration" textFill="#b79f62">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

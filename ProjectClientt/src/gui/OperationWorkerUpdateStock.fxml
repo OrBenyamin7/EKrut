@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.OperationWorkerUpdateStockController">
+   <children>
+      <AnchorPane layoutY="-6.0" prefHeight="544.0" prefWidth="742.0" style="-fx-background-color: #f8f4ec; -fx-background-color: ;">
+         <children>
+            <AnchorPane layoutY="6.0" prefHeight="46.0" prefWidth="742.0" style="-fx-background-color: #383c34;">
+               <children>
+                  <Button fx:id="exitBtn" layoutX="706.0" layoutY="6.0" mnemonicParsing="false" onAction="#pressExitBtn" prefWidth="26.0" style="-fx-background-color: #f2e9c0;" text="X" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="updateLabel" layoutX="238.0" layoutY="4.0" prefHeight="40.0" prefWidth="246.0" text="Update Stock" textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Broadway" size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-1.0" layoutY="506.0" prefHeight="39.0" prefWidth="742.0" style="-fx-background-color: #343c34;">
+               <children>
+                  <Button fx:id="backBtn" layoutX="4.0" layoutY="3.0" mnemonicParsing="false" onAction="#pressBackBtn" prefHeight="31.0" prefWidth="64.0" style="-fx-background-color: #f2e9c0;" text="Back" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="ekrutLogoImage" fitHeight="33.0" fitWidth="76.0" layoutX="331.0" layoutY="4.0">
+                     <image>
+                        <Image url="@../images/COPYWRITES.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="saveBtn" layoutX="101.0" layoutY="348.0" mnemonicParsing="false" onAction="#pressSaveBtn" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #cfa34b;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="29.0" layoutY="60.0" prefHeight="18.0" prefWidth="76.0" text="Home Page &gt;" />
+            <Label layoutX="105.0" layoutY="60.0" prefHeight="18.0" prefWidth="126.0" text="Update Stock Review &gt;" />
+            <Label layoutX="230.0" layoutY="60.0" prefHeight="18.0" prefWidth="85.0" text="Update Stock">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TableView fx:id="updateStockTable" layoutX="347.0" layoutY="96.0" prefHeight="394.0" prefWidth="363.0">
+              <columns>
+                <TableColumn fx:id="numberColumn" prefWidth="75.0" text="Number" />
+                <TableColumn fx:id="itemColumn" minWidth="0.0" prefWidth="101.5999755859375" text="Item" />
+                  <TableColumn fx:id="currentAmountColumn" prefWidth="185.6000244140625" text="CurrentAmount" />
+              </columns>
+            </TableView>
+            <Label fx:id="feedbackLabel" alignment="TOP_CENTER" layoutX="15.0" layoutY="411.0" prefHeight="46.0" prefWidth="306.0" textAlignment="CENTER" textFill="#fa0606">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <ImageView fx:id="machineNameImg" fitHeight="30.0" fitWidth="31.0" layoutX="14.0" layoutY="267.0">
+               <image>
+                  <Image url="@../images/4718735.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="managmentAreaImg" fitHeight="30.0" fitWidth="31.0" layoutX="14.0" layoutY="183.0">
+               <image>
+                  <Image url="@../images/9148306.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="specificAreaLable" layoutX="112.0" layoutY="185.0" prefHeight="27.0" prefWidth="112.0" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="managmentAreaLable" layoutX="54.0" layoutY="185.0" text="Area:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="machineNameLable" layoutX="54.0" layoutY="270.0" text="Machine name:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="specificMachineNameLable" layoutX="211.0" layoutY="270.0" prefHeight="27.0" prefWidth="112.0" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

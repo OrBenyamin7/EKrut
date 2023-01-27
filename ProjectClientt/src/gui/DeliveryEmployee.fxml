@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="830.0" style="-fx-background-color: #f8f4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DeliveryEmployeeController">
+   <children>
+      <AnchorPane layoutX="-5.0" prefHeight="52.0" prefWidth="838.0" style="-fx-background-color: #383c34;">
+         <children>
+            <Label layoutX="229.0" layoutY="2.0" prefHeight="52.0" prefWidth="459.0" text="Delivery managment" textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Broadway" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="exitBTN" layoutX="789.0" layoutY="8.0" mnemonicParsing="false" onAction="#exitBTNPress" prefHeight="34.0" prefWidth="33.0" style="-fx-background-color: #f2e9c0;" text="X" textFill="#343c34">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="223.0" layoutY="81.0" text="Area of deliveries" textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EnterArea" layoutX="439.0" layoutY="85.0" prefHeight="26.0" prefWidth="160.0" style="-fx-background-color: eeeee4;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <AnchorPane layoutX="-6.0" layoutY="638.0" prefHeight="43.0" prefWidth="838.0" style="-fx-background-color: #383c34;">
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="89.0" layoutX="374.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/COPYWRITES.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ReturnBTN" layoutX="13.0" layoutY="5.0" mnemonicParsing="false" onAction="#pressReturnBTN" prefHeight="30.0" prefWidth="58.0" style="-fx-background-color: #f2e9c0;" text="Back" textFill="#343c34">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="211.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="164.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/orderNumber.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="247.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/deliveryStatus.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="519.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/DeliveryDate&amp;Time.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="745.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/NotifyClient.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="658.0" layoutY="141.0">
+         <image>
+            <Image url="@../images/daysLeftForDelivery.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="deliveryTable" layoutX="25.0" layoutY="171.0" prefHeight="314.0" prefWidth="783.0" style="-fx-background-color: C9C0BB;">
+        <columns>
+            <TableColumn fx:id="requestCol" prefWidth="114.39996719360352" text="Request" />
+          <TableColumn fx:id="orderNumCol" prefWidth="66.39999389648438" text="Order num" />
+            <TableColumn fx:id="ClientDeliveryStatusCol" prefWidth="117.59996032714844" text="Client del status" />
+            <TableColumn fx:id="addressCol" prefWidth="126.4000244140625" text="address" />
+            <TableColumn fx:id="DeliveryDetailsCol" prefWidth="169.60003662109375" text="Delivery details" />
+            <TableColumn fx:id="DaysLeftForDeliveryCol" prefWidth="92.7999267578125" text="Days 4 delivery" />
+            <TableColumn fx:id="ClientNotifiedCol" prefWidth="93.5999633789063" text="Client notified " />
+        </columns>
+      </TableView>
+      <TextField fx:id="idLabel" layoutX="25.0" layoutY="546.0" prefHeight="31.0" prefWidth="121.0" promptText="Order Number">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="CloseOrderBTN" layoutX="154.0" layoutY="546.0" mnemonicParsing="false" onAction="#pressCloseOrderBTN" prefHeight="27.0" prefWidth="114.0" style="-fx-background-color: BAA4A3;" text="Close Order">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="74.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/deliveryRequestApproved.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="373.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/AddressForDelivery.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="MessageUserPassLabel" layoutX="401.0" layoutY="544.0" prefHeight="30.0" prefWidth="406.0" style="-fx-background-color: ffffff;" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow height="9.3" radius="4.735" width="11.64" />
+         </effect>
+      </Label>
+      <Label layoutX="25.0" layoutY="59.0" prefHeight="22.0" prefWidth="114.0" text="Home Page &gt;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="59.0" prefHeight="22.0" prefWidth="102.0" text="Report view">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="546.0" prefHeight="22.0" prefWidth="92.0" text="Message view:">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="approveBTN" layoutX="154.0" layoutY="502.0" mnemonicParsing="false" onAction="#pressApproveBTN" prefHeight="27.0" prefWidth="114.0" style="-fx-background-color: BAA4A3;" text="Approve">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <TextField fx:id="orderNumberLabel" layoutX="24.0" layoutY="502.0" prefHeight="31.0" prefWidth="121.0" promptText="Order Number">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

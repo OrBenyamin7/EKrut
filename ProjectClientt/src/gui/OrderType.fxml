@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="611.0" style="-fx-background-color: #f8f4ec;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.OrderTypeController">
+   <children>
+      <ComboBox fx:id="chooseAreaDropDownList" layoutX="91.0" layoutY="78.0" onMousePressed="#pressAreaChoosed" prefHeight="26.0" prefWidth="151.0" promptText="-Select Area-" style="-fx-background-color: #cfcbc8;" />
+      <Label fx:id="errorLabel" layoutX="104.0" layoutY="425.0" prefHeight="35.0" prefWidth="380.0" textAlignment="CENTER" textFill="#6b0e00">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="49.0" prefHeight="58.0" prefWidth="32.0" text="*" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="46.0" prefWidth="612.0" style="-fx-background-color: #383c34;">
+         <children>
+            <Button fx:id="exitBTN" layoutX="573.0" layoutY="7.0" mnemonicParsing="false" onAction="#pressexitBTN" prefWidth="26.0" style="-fx-background-color: #f2e9c0;" text="X" textFill="#343c34">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="196.0" layoutY="3.0" prefHeight="39.0" prefWidth="220.0" text="Order Type" textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Broadway" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="581.0" prefHeight="46.0" prefWidth="612.0" style="-fx-background-color: #343c34;">
+         <children>
+            <Button fx:id="ReturnBTN" layoutX="4.0" layoutY="6.0" mnemonicParsing="false" onAction="#pressReturnBTN" prefHeight="31.0" prefWidth="64.0" style="-fx-background-color: #f2e9c0;" text="Back" textFill="#343c34">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="40.0" fitWidth="86.0" layoutX="239.0" layoutY="6.0">
+               <image>
+                  <Image url="@../images/COPYWRITES.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="ContinueBTN" layoutX="210.0" layoutY="494.0" mnemonicParsing="false" onAction="#pressContinueBTN" prefHeight="40.0" prefWidth="167.0" style="-fx-background-color: #cfa34b;" text="Proceed to Order" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="272.0" layoutY="77.0" prefHeight="27.0" prefWidth="174.0" text="Machine Name:" textFill="#7c6e48">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="78.0" prefHeight="27.0" prefWidth="55.0" text="Area:" textFill="#7c6e48">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="chooseMachineNameDropDownList" layoutX="448.0" layoutY="78.0" onMousePressed="#pressMachineNameDropDownList" prefHeight="26.0" prefWidth="138.0" promptText="-Select Mechine-" style="-fx-background-color: #cfcbc8;" />
+      <Label layoutX="25.0" layoutY="154.0" prefHeight="27.0" prefWidth="158.0" text="Supply Method:" textFill="#7c6e48">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="585.0" layoutY="51.0" prefHeight="58.0" prefWidth="32.0" text="*" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="127.0" prefHeight="58.0" prefWidth="32.0" text="*" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="anchorSupplyMethod" layoutX="17.0" layoutY="284.0" prefHeight="200.0" prefWidth="593.0">
+         <children>
+            <Label layoutX="173.0" layoutY="14.0" text="Delivery Address" textFill="#7c6e48" underline="true">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="88.0" text="City:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="EnterCityName" layoutX="65.0" layoutY="85.0" prefHeight="34.0" prefWidth="107.0">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="184.0" layoutY="88.0" text="Street:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="EnterStreetName" layoutX="253.0" layoutY="85.0" prefHeight="34.0" prefWidth="107.0">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="373.0" layoutY="88.0" text="House number:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="EnterHouseNumber" layoutX="521.0" layoutY="85.0" prefHeight="34.0" prefWidth="55.0">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <RadioButton fx:id="radioDelivery" layoutX="197.0" layoutY="195.0" mnemonicParsing="false" onAction="#pressradioDelivery" text="Delivery" textFill="#b79f62">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioPickUp" layoutX="198.0" layoutY="156.0" mnemonicParsing="false" onAction="#pressradioPickUp" selected="true" text="PickUp" textFill="#b79f62" toggleGroup="$group">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="8.0" layoutY="47.0" prefHeight="18.0" prefWidth="76.0" text="Home Page &gt;" />
+      <Label layoutX="84.0" layoutY="47.0" prefHeight="18.0" prefWidth="85.0" text="Order Type">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

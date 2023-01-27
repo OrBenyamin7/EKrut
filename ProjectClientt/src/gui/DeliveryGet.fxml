@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DeliveryGetController">
+   <children>
+      <AnchorPane layoutX="-11.0" prefHeight="462.0" prefWidth="593.0" style="-fx-background-color: #f8f4ec; -fx-background-color: ;">
+         <children>
+            <Label layoutX="41.0" layoutY="81.0" text="Enter Order Code:" textFill="#b79f62" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="EnterOrderCode" layoutX="202.0" layoutY="78.0" prefHeight="26.0" prefWidth="134.0" promptText="1234567" style="-fx-background-color: white;">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></TextField>
+            <AnchorPane layoutX="6.0" layoutY="422.0" prefHeight="2.0" prefWidth="594.0" style="-fx-background-color: #343c34;">
+               <children>
+                  <ImageView fitHeight="34.0" fitWidth="74.0" layoutX="238.0" layoutY="5.0">
+                     <image>
+                        <Image url="@../images/COPYWRITES.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="SignOutbtn111" layoutX="12.0" layoutY="6.0" mnemonicParsing="false" onAction="#pressSignOut" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #f2e9c0;" text="Back" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="7.0" prefHeight="39.0" prefWidth="593.0" style="-fx-background-color: #383c34;">
+               <children>
+                  <Label alignment="CENTER" layoutX="149.0" layoutY="2.0" prefHeight="34.0" prefWidth="328.0" text="Delivery received" textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Broadway" size="29.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="exitBTN" layoutX="553.0" layoutY="5.0" mnemonicParsing="false" onAction="#pressexitBTN" prefHeight="26.0" prefWidth="33.0" style="-fx-background-color: #f2e9c0;" text="X" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="OrderreceivedBTN" layoutX="423.0" layoutY="73.0" mnemonicParsing="false" onAction="#pressOrderreceivedBTN" prefHeight="39.0" prefWidth="134.0" style="-fx-background-color: #cfa34b;" text="Order received" textFill="#343c34">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="388.0" layoutY="140.0" prefHeight="101.0" prefWidth="198.0" textFill="RED" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Bell MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableOrders" layoutX="48.0" layoutY="131.0" prefHeight="244.0" prefWidth="328.0">
+              <columns>
+                <TableColumn fx:id="ordernumCol" prefWidth="101.0" text="Order number" />
+                <TableColumn fx:id="statusCol" prefWidth="112.0" text="Status" />
+                  <TableColumn fx:id="DeliveryReceivedcol" prefWidth="114.0" text="Delivery Received" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

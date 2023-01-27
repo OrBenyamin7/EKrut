@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="510.0" style="-fx-background-color: #f8f4ec;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServiceRepresentativeAddNewCustomerController">
+   <children>
+      <AnchorPane prefHeight="45.0" prefWidth="510.0" style="-fx-background-color: #383c34;">
+         <children>
+            <Button fx:id="exitBTN" layoutX="470.0" layoutY="7.0" mnemonicParsing="false" onAction="#pressexitBTN" prefWidth="26.0" style="-fx-background-color: #f2e9c0;" text="X" textFill="#343c34">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="78.0" layoutY="3.0" prefHeight="39.0" prefWidth="388.0" text="Add New Customer" textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Broadway" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="603.0" prefHeight="39.0" prefWidth="510.0" style="-fx-background-color: #343c34;">
+         <children>
+            <Button fx:id="BackBTN" layoutX="8.0" layoutY="3.0" mnemonicParsing="false" onAction="#pressBackBTN" prefHeight="31.0" prefWidth="64.0" style="-fx-background-color: #f2e9c0;" text="Back" textFill="#343c34">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="40.0" fitWidth="85.0" layoutX="213.0" layoutY="-3.0">
+               <image>
+                  <Image url="@../images/COPYWRITES.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="submitBTN" layoutX="188.0" layoutY="512.0" mnemonicParsing="false" onAction="#pressSubmitBTN" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #cfa34b;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" layoutX="65.0" layoutY="466.0" prefHeight="35.0" prefWidth="380.0" textAlignment="CENTER" textFill="#6b0e00">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="detailsAnchorPane" layoutX="43.0" layoutY="209.0" prefHeight="153.0" prefWidth="298.0">
+         <children>
+            <Label layoutX="18.0" layoutY="22.0" text="First Name:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstNameTextFild" editable="false" layoutX="154.0" layoutY="18.0" prefHeight="34.0" prefWidth="146.0">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="18.0" layoutY="65.0" text="Last Name:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastNameTextFild" editable="false" layoutX="154.0" layoutY="61.0" prefHeight="34.0" prefWidth="146.0">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="18.0" layoutY="109.0" text="Role" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="roleTextFild" editable="false" layoutX="154.0" layoutY="105.0" prefHeight="34.0" prefWidth="146.0">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <Label layoutX="41.0" layoutY="86.0" prefHeight="27.0" prefWidth="309.0" text="Please Enter UserName:" textFill="#7c6e48">
+         <font>
+            <Font name="Bell MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="154.0" text="UserName" textFill="#7c6e48">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameTextFild" layoutX="216.0" layoutY="150.0" prefHeight="34.0" prefWidth="107.0">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </TextField>
+      <RadioButton fx:id="radioSetAsNewCustomer" layoutX="78.0" layoutY="375.0" mnemonicParsing="false" onAction="#pressradioSetAsNewCustomer" text="Set As New Customer" textFill="#b79f62">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="group1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioSetAsNewMember" layoutX="78.0" layoutY="412.0" mnemonicParsing="false" onAction="#pressradioSetAsNewMember" selected="true" text="Set As New Member" textFill="#b79f62" toggleGroup="$group1">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </RadioButton>
+      <Line endX="273.0000305175781" layoutX="237.0" layoutY="209.0" startX="-236.99998474121094" />
+      <Button fx:id="getDetails" layoutX="355.0" layoutY="147.0" mnemonicParsing="false" onAction="#preessGetDetailsBTN" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #cfa34b;" text="Get Details" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="5.0" layoutY="47.0" prefHeight="18.0" prefWidth="76.0" text="Home Page &gt;" />
+      <Label layoutX="81.0" layoutY="47.0" prefHeight="18.0" prefWidth="114.0" text="Add New Customer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AreaManagerExecutionOrderController">
+   <children>
+      <AnchorPane layoutY="-6.0" prefHeight="478.0" prefWidth="421.0" style="-fx-background-color: #f8f4ec; -fx-background-color: ;">
+         <children>
+            <AnchorPane layoutY="6.0" prefHeight="45.0" prefWidth="428.0" style="-fx-background-color: #383c34;">
+               <children>
+                  <Button fx:id="exitBtn" layoutX="389.0" layoutY="6.0" mnemonicParsing="false" onAction="#pressExitBtn" prefWidth="26.0" style="-fx-background-color: #f2e9c0;" text="X" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="executionLabel" layoutX="63.0" layoutY="3.0" prefHeight="40.0" prefWidth="328.0" text="Execution Order " textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Broadway" size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="439.0" prefHeight="39.0" prefWidth="428.0" style="-fx-background-color: #343c34;">
+               <children>
+                  <Button fx:id="backBtn" layoutX="4.0" layoutY="2.0" mnemonicParsing="false" onAction="#pressBackBtn" prefHeight="31.0" prefWidth="64.0" style="-fx-background-color: #f2e9c0;" text="Back" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="ekrutLogoImage" fitHeight="33.0" fitWidth="74.0" layoutX="161.0" layoutY="6.0">
+                     <image>
+                        <Image url="@../images/COPYWRITES.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="operationWorkerImg" fitHeight="30.0" fitWidth="31.0" layoutX="35.0" layoutY="92.0">
+               <image>
+                  <Image url="@../images/4718735.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="sendBtn" layoutX="170.0" layoutY="332.0" mnemonicParsing="false" onAction="#pressSendButton" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: #cfa34b;" text="Send" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="operationWorkerComboBox" layoutX="259.0" layoutY="94.0" onAction="#chooseWorker" prefHeight="26.0" prefWidth="136.0" promptText="Name" style="-fx-background-color: #cfcbc8;" />
+            <Label fx:id="operationWorkerLabel" layoutX="66.0" layoutY="93.0" text="Operation worker:" textFill="#7c6e48">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="executionMsgTextField" alignment="TOP_LEFT" layoutX="43.0" layoutY="140.0" prefHeight="159.0" prefWidth="352.0" />
+            <Label fx:id="feedbackLabel" alignment="TOP_CENTER" layoutX="58.0" layoutY="377.0" prefHeight="46.0" prefWidth="306.0" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="34.0" layoutY="57.0" prefHeight="18.0" prefWidth="76.0" text="Home Page &gt;" />
+      <Label layoutX="110.0" layoutY="57.0" prefHeight="18.0" prefWidth="106.0" text="Execution Order">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

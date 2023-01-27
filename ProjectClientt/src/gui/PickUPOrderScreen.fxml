@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PickUpOrderLocalController">
+   <children>
+      <AnchorPane layoutX="-11.0" prefHeight="371.0" prefWidth="395.0" style="-fx-background-color: #f8f4ec; -fx-background-color: ;">
+         <children>
+            <Label layoutX="41.0" layoutY="98.0" text="Enter Order Code:" textFill="#b79f62" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="EnterOrderCode" layoutX="202.0" layoutY="95.0" prefHeight="26.0" prefWidth="134.0" promptText="1234567" style="-fx-background-color: white;">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></TextField>
+            <AnchorPane layoutX="2.0" layoutY="331.0" prefHeight="40.0" prefWidth="394.0" style="-fx-background-color: #343c34;">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="61.0" layoutX="166.0" layoutY="8.0">
+                     <image>
+                        <Image url="@../images/COPYWRITES.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="SignOutbtn111" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#pressSignOut" prefHeight="20.0" prefWidth="62.0" style="-fx-background-color: #f2e9c0;" text="Back" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="9.0" prefHeight="39.0" prefWidth="387.0" style="-fx-background-color: #383c34;">
+               <children>
+                  <Label alignment="CENTER" layoutX="71.0" layoutY="2.0" prefHeight="34.0" prefWidth="252.0" text="PickUp Order" textFill="#b28f47" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Broadway" size="29.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="exitBTN" layoutX="349.0" layoutY="5.0" mnemonicParsing="false" onAction="#pressexitBTN" prefHeight="26.0" prefWidth="33.0" style="-fx-background-color: #f2e9c0;" text="X" textFill="#343c34">
+                     <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="SubmitBTN" layoutX="131.0" layoutY="245.0" mnemonicParsing="false" onAction="#pressSubmitBTN" prefHeight="39.0" prefWidth="134.0" style="-fx-background-color: #cfa34b;" text="Submit" textFill="#343c34">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="37.0" layoutY="185.0" prefHeight="46.0" prefWidth="322.0" textFill="RED" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Bell MT Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="8.0" layoutY="43.0" prefHeight="18.0" prefWidth="76.0" text="Home Page &gt;" />
+      <Label layoutX="84.0" layoutY="43.0" prefHeight="18.0" prefWidth="85.0" text="PickUp Order">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
