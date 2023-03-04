@@ -21,8 +21,38 @@ Functionality
 Customer
   - Create order
   - Cancel order
-  - Approve delivery 
+  - Approve delivery
+  
+CEO
+  - View montly reports
+  - Place order
+ 
+Area Manager
+  - View montly reports
+  - Set minimum level for each machine in the area
+  - Approve new customers
+  - Send execution orders to operation worker
+  - Place order
+  
+Operation Worker
+  - Set new inventory for each machine
+  - Approve execution orders
+  - Place order
+  
+Delivery Employee
+  - Approve new orders for delivery
+  - Dealing with delivery orders details
+  - Place order
+  
+Marketing Manager
+  - Creating new sales
+  - Place order
+  
+Marketing Area worker
+  - Active sales in area
+  - Place order
+  
 
-![consumer](https://user-images.githubusercontent.com/109306150/222917893-3956cf97-1e52-47c9-98dd-c99ed6b63aed.png)
+  
 
 
