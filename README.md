@@ -1,5 +1,7 @@
 # EKrut - Online Food Machine
 
+# Description
+
 EKrut is a Distributed Food Machine
 
 It was created in my 5th semester as part of the "Middle" project.
@@ -16,7 +18,7 @@ The project was created in 3 stages:
 
 The project mimics an online food machine where customers can place order, managers can also view reports and much more.
 
-Functionality
+# Functionality
 
 Customer
   - Create order
