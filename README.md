@@ -1,1 +1,0 @@
-# EKrut - Food Machine
