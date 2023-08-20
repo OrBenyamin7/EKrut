@@ -6,7 +6,7 @@ EKrut is a Distributed Food Machine
 
 It was created in my 5th semester as part of the "Middle" project.
 
-EKrut is an online food machine, that utilize the OCSF java API, along side JavaFX, ScenceBuilder and more external API's.
+EKrut is an online food machine, that utilize the OCSF java API, along side JavaFX, SceneBuilder and more external API's.
 
 The project was created in 3 stages:
 
